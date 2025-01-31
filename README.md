@@ -112,22 +112,71 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <img src="https://i.imgur.com/UdjTEet.png" height="80%" width="80%" alt="Extract osTicket"/>
 </p>
 
-<p>12) Download the osTicket package and extract it to the correct directory in your virtual machine.</p>
+<p>12) On IIS go to sites -> Default -> osTicket -On the right, click “Browse *:80”.</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid12.png" height="80%" width="80%" alt="Extract osTicket"/>
+  <img src="https://i.imgur.com/INaYr32.png" height="80%" width="80%" alt="Extract osTicket"/>
+    -<p> Once you press the button browse *:80(http) you should see a tab open that has the picture posted below. </p>
+    <img src="https://i.imgur.com/6uB9Vnu.png" height="80%" width="80%" alt="Configure osTicket settings"/></p>
 </p>
 
-<p>13) Open the osTicket directory and configure the required settings for installation.</p>
+<p>13) Go to IIS > Default > osTicket, then double-click PHP Manager. Click "Enable or Disable Extensions" and enable php_imap.dll, php_intl.dll, and php_opcache.dll. After that, refresh the osTicket site in the browser, and the red X's should turn green.</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid13.png" height="80%" width="80%" alt="Configure osTicket settings"/>
+  <img src="https://i.imgur.com/8YL4O94.png" height="80%" width="80%" alt="Configure osTicket settings"/>
+  <img src="https://i.imgur.com/Xq69wsp.png" height="80%" width="80%" alt="Configure osTicket settings"/>
+  <img src="https://i.imgur.com/bgIDTXz.png" height="80%" width="80%" alt="Configure osTicket settings"/>
+
 </p>
 
-<p>14) Continue by following the osTicket installation wizard, completing all necessary steps.</p>
+<p>14)After enabling the extensions, go to C:\inetpub\wwwroot\osTicket\include\ in File Explorer and find ost-sampleconfig.php.</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid14.png" height="80%" width="80%" alt="osTicket Installation Wizard"/>
+    -<p> Rename ost-sampleconfig.php to ost-config.php. </p>
+  <img src="https://i.imgur.com/xyOV5G5.png" height="80%" width="80%" alt="osTicket Installation Wizard"/>
+  <img src="https://i.imgur.com/brrFGAX.png" height="80%" width="80%" alt="osTicket Installation Wizard"/>
+
+  -<p> Right-click the file, select Properties, then go to the Security tab. Click Advanced, disable inheritance, and choose   "Remove all inherited permissions." </p>
+
+  <img src="https://i.imgur.com/tFwocBQ.png" height="80%" width="80%" alt="osTicket Installation Wizard"/>
+  
+      -<p> Next, click "Add" to set new permissions. </p>
+  
+  <img src="https://i.imgur.com/LuVwQOG.png" height="80%" width="80%" alt="osTicket Installation Wizard"/>
+
+  <img src="https://i.imgur.com/weJsqL3.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+  <img src="https://i.imgur.com/TZOCf8P.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+  <img src="https://i.imgur.com/IUz98C1.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+</p>
+<p>15) Now, continue setting up osTicket in the browser. Click "Continue" on the osTicket page and fill in the required details, except for the Database Settings—we’ll do that next.</p>
+<p align="center">
+  <img src="https://i.imgur.com/ibsANG6.png" height="80%" width="80%" alt="osTicket Final Setup"/>
 </p>
 
-<p>15) Finally, complete the installation and configure the osTicket settings to finish the setup process.</p>
+  
+<p>16) We will want to download and install HeidiSQL from the Installation Files.</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid15.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+  <img src="https://i.imgur.com/y7uPAZY.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+      -<p> When the program is open we will create a new session in it. </p>
+
+  <img src="https://i.imgur.com/5TVbERn.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+      -<p> Next, connect to the session and create a database named "osTicket."</p>
+
+  <img src="https://i.imgur.com/fVaUCbC.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+</p>
+
+
+<p>15) In HeidiSQL, right-click "Unnamed" on the left side, select "Create new," then "Database." Name the new database "osTicket." After that, go back to the osTicket browser and enter "osTicket" under MySQL Database.</p>
+<p align="center">
+  <img src="https://i.imgur.com/8AX2YKr.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+  -<p> After creating the database, go back to the osTicket browser, complete the rest of the forms, and review everything. Once you're sure it's correct, click "Install Now!" If everything is set up, the image below will appear, and you can move on to the next step.</p>
+  <img src="https://i.imgur.com/sOIdVbk.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+  -<p> Next, connect to the session and create a database named "osTicket."</p>
+
+  <img src="https://i.imgur.com/U5wyucx.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+
 </p>
