@@ -66,17 +66,29 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   <p> - Download PHP 7.3.8 (php-7.3.8-nts-Win32-VC15-x86.zip) from the installation files and unzip it into the C:\PHP folder.</p>
 
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid6.png" height="80%" width="80%" alt="Install PHP for osTicket"/>
+  <img src="https://i.imgur.com/r5QSVBv.png" height="80%" width="80%" alt="Install PHP for osTicket"/>
+  <img src="https://i.imgur.com/7zkry3i.png" height="80%" width="80%" alt="Extract osTicket"/>
+  <img src="https://i.imgur.com/tbTRuBI.png" height="80%" width="80%" alt="Extract osTicket"/>
+
 </p>
 
-<p>7) Next, enable the PHP Rewrite module for proper URL handling in osTicket.</p>
+<p>7) After extracting the zip file into the C:\PHP folder, download and install VC_redist.x86.exe from the installation files. Follow the setup wizard to complete the installation.</p>
+
+  - <p> Download and install MySQL 5.5.62 (mysql-5.5.62-win32.msi). Run the setup wizard and choose: Typical Setup -> Launch   
+    Configuration Wizard -> Standard Configuration.</p>
+
+
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid7.png" height="80%" width="80%" alt="Enable PHP Rewrite Module"/>
-</p>
+  <img src="https://i.imgur.com/kqvjAoJ.png" height="80%" width="80%" alt="Enable PHP Rewrite Module"/></p>
+
+  - <p> After selecting Standard Configuration and setting your password, you should see a screen like this.</p>
+    <img src="https://i.imgur.com/DCyg1eM.png" height="80%" width="80%" alt="Install VC Redist"/>
 
 <p>8) Download and install the VC Redist package for the proper functioning of osTicket.</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid8.png" height="80%" width="80%" alt="Install VC Redist"/>
+  <img src="https://i.imgur.com/gTfeOdZ.png" height="80%" width="80%" alt="Install VC Redist"/>
+  <img src="https://i.imgur.com/tkqVDgg.png" height="80%" width="80%" alt="Install MySQL"/>
+
 </p>
 
 <p>9) Install MySQL to create the database for osTicket.</p>
