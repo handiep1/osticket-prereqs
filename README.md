@@ -84,26 +84,32 @@ This tutorial outlines the prerequisites and installation of the open-source hel
   - <p> After selecting Standard Configuration and setting your password, you should see a screen like this.</p>
     <img src="https://i.imgur.com/DCyg1eM.png" height="80%" width="80%" alt="Install VC Redist"/>
 
-<p>8) Download and install the VC Redist package for the proper functioning of osTicket.</p>
+<p>8) Next, click the Windows icon, type "IIS," right-click it, and select "Run as administrator." The last picture shows all the prerequisites you installed.</p>
 <p align="center">
   <img src="https://i.imgur.com/gTfeOdZ.png" height="80%" width="80%" alt="Install VC Redist"/>
   <img src="https://i.imgur.com/tkqVDgg.png" height="80%" width="80%" alt="Install MySQL"/>
 
 </p>
 
-<p>9) Install MySQL to create the database for osTicket.</p>
+<p>9) We will now want to register PHP from within IIS. Click on PHP Manager. </p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid9.png" height="80%" width="80%" alt="Install MySQL"/>
+  <img src="https://i.imgur.com/AUuQ9qY.png" height="80%" width="80%" alt="Install MySQL"/></p>
+  
+  - <p> Now, register PHP in IIS by clicking on PHP Manager. </p>
+    <img src="https://i.imgur.com/6WTpnv9.png" height="80%" width="80%" alt="Install HeidiSQL"/>
+
+
+<p>10) Click on PHP Manager and select "Register new PHP version." Browse to the C drive, open the PHP folder, select php.cgi, and click "Open," then "OK." Finally, restart IIS from the home screen to ensure everything is ready for osTicket.</p>
+<p align="center">
+  <img src="https://i.imgur.com/IXA9cW0.png" height="80%" width="80%" alt="Install HeidiSQL"/>
 </p>
 
-<p>10) Download and install HeidiSQL for managing your MySQL database.</p>
+<p>11) Open two file folders: one from the Downloads section and one from the C drive. In the C drive, go to Inetpub > wwwroot, then move the "upload" folder from the osTicket download folder into wwwroot. Rename the "upload" folder to "osTicket."</p>
 <p align="center">
-  <img src="https://i.imgur.com/yourimageid10.png" height="80%" width="80%" alt="Install HeidiSQL"/>
-</p>
-
-<p>11) Open HeidiSQL and configure the connection to your MySQL database.</p>
-<p align="center">
-  <img src="https://i.imgur.com/yourimageid11.png" height="80%" width="80%" alt="Configure HeidiSQL"/>
+  <img src="https://i.imgur.com/IVGLg6c.png" height="80%" width="80%" alt="Configure HeidiSQL"/>
+  <img src="https://i.imgur.com/qSmDDdV.png" height="80%" width="80%" alt="Configure HeidiSQL"/>
+  <img src="https://i.imgur.com/Wqrlebs.png" height="80%" width="80%" alt="Configure HeidiSQL"/>
+  <img src="https://i.imgur.com/UdjTEet.png" height="80%" width="80%" alt="Extract osTicket"/>
 </p>
 
 <p>12) Download the osTicket package and extract it to the correct directory in your virtual machine.</p>
