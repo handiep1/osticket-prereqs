@@ -167,14 +167,17 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 </p>
 
 
-<p>15) In HeidiSQL, right-click "Unnamed" on the left side, select "Create new," then "Database." Name the new database "osTicket." After that, go back to the osTicket browser and enter "osTicket" under MySQL Database.</p>
+<p>17) In HeidiSQL, right-click "Unnamed" on the left side, select "Create new," then "Database." Name the new database "osTicket." After that, go back to the osTicket browser and enter "osTicket" under MySQL Database.</p>
 <p align="center">
   <img src="https://i.imgur.com/8AX2YKr.png" height="80%" width="80%" alt="osTicket Final Setup"/>
+
+    -<p> The last step is cleanup. Delete the "setup" folder at C:\inetpub\wwwroot\osTicket\setup—only delete that folder, nothing else. Then, set the permissions for the ost-config.php file back to "Read" only.</p>
+      <img src="https://i.imgur.com/ihKlcyj.png" height="80%" width="80%" alt="osTicket Final Setup"/>
 
   -<p> After creating the database, go back to the osTicket browser, complete the rest of the forms, and review everything. Once you're sure it's correct, click "Install Now!" If everything is set up, the image below will appear, and you can move on to the next step.</p>
   <img src="https://i.imgur.com/sOIdVbk.png" height="80%" width="80%" alt="osTicket Final Setup"/>
 
-  -<p> Next, connect to the session and create a database named "osTicket."</p>
+  -<p> Congrats! You've successfully installed and set up osTicket!</p>
 
   <img src="https://i.imgur.com/U5wyucx.png" height="80%" width="80%" alt="osTicket Final Setup"/>
 
